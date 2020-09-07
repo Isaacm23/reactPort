@@ -1,13 +1,13 @@
 import React from 'react';
-import {BrowserRouter as Router} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import './App.css';
 import { Container, NavbarBrand } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Navbar'
-import Footer from './components/Footer';
-import PortfolioPage from './pages/PortfolioPage';
-import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
+// import Footer from './components/Footer';
+// import PortfolioPage from './pages/PortfolioPage';
+// import AboutPage from './pages/AboutPage';
+// import ContactPage from './pages/ContactPage';
 
 class App extends React.Component {
  
@@ -57,11 +57,11 @@ class App extends React.Component {
             </Navbar.Collapse>
           </Navbar>
 
-          <Route path="/" exact render={() => <AboutPage title={this.state.home.title} subTitle={this.state.about.subTitle} text={this.state.home.text} />} />
+          {/* <Route path="/" exact render={() => <AboutPage title={this.state.home.title} subTitle={this.state.about.subTitle} text={this.state.home.text} />} />
           <Route path="/portfolio" render={() => <PortfolioPage title={this.state.portfolio.title} />} />
-          <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
+          <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />} /> */}
           
-          <Footer />
+          {/* <Footer /> */}
 
         </Container>
       </Router>
