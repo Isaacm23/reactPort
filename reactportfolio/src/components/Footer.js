@@ -13,7 +13,7 @@ function Footer() {
                         Isaac Mckittrick
                     </Col>
                     <Col className="p-0 d-flex justify-content-end" md={3}>
-                        This site was made by Garrett Love.
+                        Have a Wonderful Day
                     </Col>
                 </Row>
             </Container>
