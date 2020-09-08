@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import Content from '../components/Content';
+// import Content from '../components/Content';
 
 function AboutPage(props) {
 
@@ -8,7 +8,7 @@ function AboutPage(props) {
         <div>
             <Hero title={props.title} />
 
-            <Content>
+            {/* <Content> */}
             <p>chicken</p>
 
             <p>dog</p>
@@ -18,7 +18,7 @@ function AboutPage(props) {
             <p>M</p>
 
             <p></p>
-            </Content>
+            {/* </Content> */}
         </div>
     );
 

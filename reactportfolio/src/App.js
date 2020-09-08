@@ -5,9 +5,10 @@ import { Container, NavbarBrand } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Navbar'
 import Footer from './components/Footer';
-// import PortfolioPage from './pages/PortfolioPage';
-// import AboutPage from './pages/AboutPage';
-// import ContactPage from './pages/ContactPage';
+import Portfolio from './pages/Portfolio';
+import AboutPage from './pages/Aboutme';
+import Contact from './pages/Contact';
+
 
 class App extends React.Component {
  
@@ -16,11 +17,11 @@ class App extends React.Component {
     this.state = {
       title: 'Isaac Mckittrick',
       headerLinks: [
-        {title: 'Home', path: '/'},
+        {title: 'About', path: '/'},
         {title: 'Portfolio', path: '/portfolio'},
         {title: 'Contact', path: '/contact' }
       ],
-      home: {
+      about: {
         title:'About Me',
         subTitle: 'I am very Interesting',
         text: 'Read a Little about me below'
@@ -45,7 +46,7 @@ class App extends React.Component {
         <Container className="p-0" fluid={true}>
           
           <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand>Isaac Mckittrick</Navbar.Brand>
+            <NavbarBrand>Isaac Mckittrick</NavbarBrand>
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
@@ -57,9 +58,9 @@ class App extends React.Component {
             </Navbar.Collapse>
           </Navbar>
 
-          {/* <Route path="/" exact render={() => <AboutPage title={this.state.home.title} subTitle={this.state.about.subTitle} text={this.state.home.text} />} />
-          <Route path="/portfolio" render={() => <PortfolioPage title={this.state.portfolio.title} />} />
-          <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />} /> */}
+           <Route path="/" exact render={() => <AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} text={this.state.about.text} />} />
+           <Route path="/portfolio" render={() => <Portfolio title={this.state.portfolio.title} />} />
+           <Route path="/contact" render={() => <Contact title={this.state.contact.title} />} /> 
           
           <Footer />
 
