@@ -1,11 +1,14 @@
 import React from 'react';
 
 import Card from '../components/Card';
-
+import resume from '../images/resume.jpg'
 import burger from '../images/burger.jpg'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-
+import business from '../images/business.jpg'
+import chargen from '../images/chargen.jpg'
+import food from '../images/food.jpg'
+import github from '../images/github.png'
 class Carousel extends React.Component {
 
     constructor(props) {
@@ -14,46 +17,50 @@ class Carousel extends React.Component {
             items: [
                 {
                     id: 0,
-                    title: 'Pro 1',
-                    subTitle: 'description',
-                    imgSrc: burger,
+                    title: 'Resume',
+                    subTitle: 'My Professional Resume',
+                    imgSrc: resume,
+                    link: 'https://isaacm23.github.io/HW2Unit-02-CSS-and-Bootstrap-Homework-Responsive-Portfolio/images/carreerchangeWebdeveloper.pdf',
                     selected: false
                 },
                 {
                     id: 1,
-                    title: 'Garrett Love',
-                    subTitle: 'YouTube channel',
-                    // imgSrc: ,
-                    // link: ,
+                    title: 'Linkedin',
+                    subTitle: 'Get To Known Me Better',
+                    imgSrc: business,
+                    link:'https://www.linkedin.com/feed/' ,
                     selected: false
                 },
                 {
                     id: 2,
-                    title: 'Evverest',
-                    subTitle: 'A social network for developers',
-                    // imgSrc: 
-                    // link: ,
+                    title: 'Burger App',
+                    subTitle: 'Project Made Using Handlebars',
+                    imgSrc: burger,
+                    link: 'https://burgers-handlebars.herokuapp.com/' ,
                     selected: false
                 },
                 {
                     id: 3,
-                    title: 'Pro 1',
-                    subTitle: 'description',
-                    // imgSrc: ,
+                    title: 'Character Generator',
+                    subTitle: 'Generate Your Own Fantasy Character',
+                    imgSrc: chargen ,
+                    link:'https://critical-hit-fantasy-character.herokuapp.com/',
                     selected: false
                 },
                 {
                     id: 4,
-                    title: 'Pro 1',
-                    subTitle: 'description',
-                    // imgSrc: ,
+                    title: 'Whats for Dinner?',
+                    subTitle: 'App That Helps You Decide What To Eat For Dinner',
+                    imgSrc: food ,
+                    link: 'https://jtcravey1991.github.io/allen-parsons-projekt/',
                     selected: false
                 },
                 {
                     id: 5,
-                    title: 'Pro 1',
-                    subTitle: 'description',
-                    // imgSrc: ,
+                    title: 'GitHub Repositories',
+                    subTitle: 'Take A Look At Some Of My Other Work',
+                    imgSrc:github,
+                    link: 'https://github.com/Isaacm23?tab=repositories',
                     selected: false
                 }
             ]
