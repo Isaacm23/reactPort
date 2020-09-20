@@ -20,7 +20,7 @@ class Carousel extends React.Component {
                     title: 'Resume',
                     subTitle: 'My Professional Resume',
                     imgSrc: resume,
-                    link: 'https://isaacm23.github.io/HW2Unit-02-CSS-and-Bootstrap-Homework-Responsive-Portfolio/images/carreerchangeWebdeveloper.pdf',
+                    link: 'https://drive.google.com/file/d/1oV9UcK0TYTD84CrGC34r2jJsAy6XWYIj/view?usp=sharing',
                     selected: false
                 },
                 {
