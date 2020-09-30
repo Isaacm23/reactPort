@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Card from '../components/Card';
 import resume from '../images/resume.jpg'
 import burger from '../images/burger.jpg'

@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Me from '../images/me5.jpg'
 // import Image from 'react-bootstrap/Image'
-import Card from '../components/Card'
+// import Card from '../components/Card'
 function AboutPage(props) {
 
     return(
